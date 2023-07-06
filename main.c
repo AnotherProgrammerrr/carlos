@@ -1,47 +1,33 @@
-#include "raylib.h"
+#include "include/raylib.h"
 
 int main(void)
 {
-    const int screenWidth = 500;
-    const int screenHeight = 500;
-    
-    InitWindow(screenWidth, screenHeight, "carlos.");
-    Color black = {0, 0, 0, 255};
-    Color white = {255, 255, 255, 255};
+    InitWindow(500, 500, "carlos.");
 
-    Image carlos = LoadImage("carlos.png");
-    Texture2D texture = LoadTextureFromImage(carlos); 
-    UnloadImage(carlos);  
-    float position[2] = {(screenWidth/2)+78, (screenHeight/2)-68};
+    Texture2D text = LoadTextureFromImage(LoadImage("carlos.png")); 
+    Vector2 pos = { GetScreenWidth() / 2.0f + 78, GetScreenHeight() / 2.0f - 68 };
     float speed = 2.5;
 
     SetTargetFPS(60); 
-    SetWindowIcon(carlos);
+    SetWindowIcon(LoadImage("carlos.png"));
 
     while (!WindowShouldClose())   
     {
         BeginDrawing();
+            
+        if (IsKeyDown(KEY_RIGHT)) pos.x += speed;
+        if (IsKeyDown(KEY_LEFT)) pos.x -= speed;
+        if (IsKeyDown(KEY_DOWN)) pos.y += speed;
+        if (IsKeyDown(KEY_UP)) pos.y -= speed;
 
-            if (IsKeyDown(KEY_RIGHT)){
-                position[0] += speed;
-            }
-            if (IsKeyDown(KEY_LEFT)){
-                position[0] -= speed;
-            }
-            if (IsKeyDown(KEY_DOWN)){
-                position[1] += speed;
-            }
-            if (IsKeyDown(KEY_UP)){
-                position[1] -= speed;
-            }
-
-            ClearBackground(white);
-            DrawText("hewwo, world.", (screenWidth/2)+10, (screenHeight/2)+10, 30, black);
-            DrawTexture(texture, position[0], position[1], WHITE);
+            ClearBackground(WHITE);
+            DrawText("hewwo, world.", (GetScreenWidth()/2)+10, (GetScreenHeight()/2)+10, 30, BLACK);
+            DrawTexture(text, pos.x, pos.y, WHITE);
 
         EndDrawing();
     }
 
+    UnloadTexture(text);
     CloseWindow();
 
     return 0;
