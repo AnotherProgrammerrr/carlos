@@ -2,9 +2,9 @@
 =============
 
 <div> 
-  Uma pequena tentativa de fazer alguma coisa em C. <br>
-  Apenas por diversão mesmo, nada demais.
+  Uma pequena tentativa de fazer alguma coisa em C.
   <img align="right" src="https://github.com/AnotherProgrammerrr/carlos/blob/main/carlos.png?raw=true"/>
+  Apenas por diversão mesmo, nada demais.
 </div>
 
 
