@@ -10,6 +10,7 @@
 Compilando
 =============
 
+Para compilar é necessário usar o seguinte comando do gcc:
 ```
 $ gcc main.c -o Carlos -O1 -Wall  -std=c11 -Wno-missing-braces -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm -mwindows
 ```
