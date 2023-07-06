@@ -2,8 +2,8 @@
 =============
 
 <div> 
-  Uma pequena tentativa de fazer alguma coisa em C. <br>
   <img align="right" src="https://github.com/AnotherProgrammerrr/carlos/blob/main/carlos.png?raw=true"/>
+  Uma pequena tentativa de fazer alguma coisa em C. <br>
   Apenas por diversão mesmo, nada demais.
 </div>
 
