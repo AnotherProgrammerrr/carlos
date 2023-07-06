@@ -1,4 +1,4 @@
-# (C)arlos
+SimpleNES
 =============
 
 Uma pequena tentativa de fazer alguma coisa em C.
