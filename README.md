@@ -1,7 +1,7 @@
 (C)arlos
 =============
 
-Uma pequena tentativa de fazer alguma coisa em C.
+Uma pequena tentativa de fazer alguma coisa em C. <br>
 Apenas por diversão mesmo, nada demais.
 
 Compilando
