@@ -7,8 +7,6 @@
   Apenas por diversão mesmo, nada demais.
 </div>
 
-
-
 Compilando
 =============
 
