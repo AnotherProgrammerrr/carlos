@@ -1,10 +1,13 @@
 (C)arlos
 =============
 
-![Carlos](https://github.com/AnotherProgrammerrr/carlos/blob/main/carlos.png?raw=true)
+<div> 
+  Uma pequena tentativa de fazer alguma coisa em C. <br>
+  Apenas por diversão mesmo, nada demais.
+  ![Carlos](https://github.com/AnotherProgrammerrr/carlos/blob/main/carlos.png?raw=true)
+</div>
 
-Uma pequena tentativa de fazer alguma coisa em C. <br>
-Apenas por diversão mesmo, nada demais.
+
 
 Compilando
 =============
