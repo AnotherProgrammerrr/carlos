@@ -10,7 +10,7 @@
 Compilando
 =============
 
-Para compilar tenha certeza de ter o libraylib.a e o header da raylib no diretóio em uma pasta bin e include, respectivamente, e usar o comando:
+Para compilar tenha certeza de ter o libraylib.a e o header da raylib no diretório em uma pasta bin e include, respectivamente, e usar o comando:
 ```
 $ gcc main.c -o Carlos -O1 -Wall  -std=c11 -Wno-missing-braces -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm -mwindows
 ```
